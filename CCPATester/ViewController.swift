@@ -14,9 +14,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.green
-        let testObj = CCPAStringBuilder()
+        view.backgroundColor = .green
         
-        testObj.testing()
+        let privacyString:String?  = CCPAStringBuilder().build()
+        
+        if (privacyString != nil) {
+            print(privacyString!)
+        }
     }
 }

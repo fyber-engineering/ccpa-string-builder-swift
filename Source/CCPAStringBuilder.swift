@@ -11,7 +11,7 @@ import Foundation
 public class CCPAStringBuilder {
     public init() {}
     
-    public func testing() -> () {
-        print("working...")
+    public func build() -> String? {
+        return "1---"
     }
 }
