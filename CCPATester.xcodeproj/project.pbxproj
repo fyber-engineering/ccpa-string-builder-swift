@@ -15,7 +15,8 @@
 		11937E2223BDEA5000E5AAD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11937E2023BDEA5000E5AAD5 /* LaunchScreen.storyboard */; };
 		11937E2D23BDEA5000E5AAD5 /* CCPATesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11937E2C23BDEA5000E5AAD5 /* CCPATesterTests.swift */; };
 		11937E3823BDEA5000E5AAD5 /* CCPATesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11937E3723BDEA5000E5AAD5 /* CCPATesterUITests.swift */; };
-		11937E4923BDF68B00E5AAD5 /* CCPAStringBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11937E4823BDF68B00E5AAD5 /* CCPAStringBuilder.framework */; };
+		11978DCD23BDFDC40043B450 /* CCPAStringBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11937E4823BDF68B00E5AAD5 /* CCPAStringBuilder.framework */; };
+		11978DCE23BDFDC40043B450 /* CCPAStringBuilder.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11937E4823BDF68B00E5AAD5 /* CCPAStringBuilder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		11978DCF23BDFDC40043B450 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				11978DCE23BDFDC40043B450 /* CCPAStringBuilder.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		11937E1223BDEA4F00E5AAD5 /* CCPATester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCPATester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11937E1523BDEA4F00E5AAD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11937E4923BDF68B00E5AAD5 /* CCPAStringBuilder.framework in Frameworks */,
+				11978DCD23BDFDC40043B450 /* CCPAStringBuilder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +197,7 @@
 				11937E0E23BDEA4F00E5AAD5 /* Sources */,
 				11937E0F23BDEA4F00E5AAD5 /* Frameworks */,
 				11937E1023BDEA4F00E5AAD5 /* Resources */,
+				11978DCF23BDFDC40043B450 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

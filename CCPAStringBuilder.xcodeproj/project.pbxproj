@@ -10,6 +10,7 @@
 		11937DF923BDD9B400E5AAD5 /* CCPAStringBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11937DEF23BDD9B400E5AAD5 /* CCPAStringBuilder.framework */; };
 		11937DFE23BDD9B400E5AAD5 /* CCPAStringBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11937DFD23BDD9B400E5AAD5 /* CCPAStringBuilderTests.swift */; };
 		11937E0023BDD9B400E5AAD5 /* CCPAStringBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 11937DF223BDD9B400E5AAD5 /* CCPAStringBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11978DD223BDFE820043B450 /* CCPAStringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11978DD123BDFE820043B450 /* CCPAStringBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		11937DF823BDD9B400E5AAD5 /* CCPAStringBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCPAStringBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11937DFD23BDD9B400E5AAD5 /* CCPAStringBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPAStringBuilderTests.swift; sourceTree = "<group>"; };
 		11937DFF23BDD9B400E5AAD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11978DD123BDFE820043B450 /* CCPAStringBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPAStringBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				11937DF123BDD9B400E5AAD5 /* CCPAStringBuilder */,
 				11937DFC23BDD9B400E5AAD5 /* CCPAStringBuilderTests */,
 				11937DF023BDD9B400E5AAD5 /* Products */,
+				11978DD023BDFE440043B450 /* Source */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +87,14 @@
 				11937DFF23BDD9B400E5AAD5 /* Info.plist */,
 			);
 			path = CCPAStringBuilderTests;
+			sourceTree = "<group>";
+		};
+		11978DD023BDFE440043B450 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				11978DD123BDFE820043B450 /* CCPAStringBuilder.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				TargetAttributes = {
 					11937DEE23BDD9B400E5AAD5 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					11937DF723BDD9B400E5AAD5 = {
 						CreatedOnToolsVersion = 11.3;
@@ -195,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11978DD223BDFE820043B450 /* CCPAStringBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +353,7 @@
 		11937E0423BDD9B400E5AAD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9G2AGGBJ52;
@@ -356,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Fyber.CCPAStringBuilder;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +379,7 @@
 		11937E0523BDD9B400E5AAD5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9G2AGGBJ52;
@@ -388,6 +404,7 @@
 		11937E0723BDD9B400E5AAD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9G2AGGBJ52;
 				INFOPLIST_FILE = CCPAStringBuilderTests/Info.plist;
@@ -406,6 +423,7 @@
 		11937E0823BDD9B400E5AAD5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9G2AGGBJ52;
 				INFOPLIST_FILE = CCPAStringBuilderTests/Info.plist;
