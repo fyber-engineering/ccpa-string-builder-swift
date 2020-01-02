@@ -9,9 +9,23 @@
 import Foundation
 
 public class CCPAStringBuilder {
-    public init() {}
+    let specVersion:String = "1"
+    let notApplicableSign:String = "-"
+    
+    var defaulString:String
+    var finalString = NSMutableString()
+    
+    public var explicitOptOut:Bool = false
+    public var optOutSale:Bool = false
+    public var limitedServiceProviderAgreement:Bool = false
+    
+    public init() {
+        defaulString = "\(specVersion)\(notApplicableSign)\(notApplicableSign)\(notApplicableSign)"
+    }
     
     public func build() -> String? {
-        return "1---"
+        finalString = NSMutableString(string: defaulString)
+        
+        return "\(finalString)"
     }
 }
