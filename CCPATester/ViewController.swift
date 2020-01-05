@@ -11,15 +11,18 @@ import UIKit
 import CCPAStringBuilder
 
 class ViewController: UIViewController {
+    @IBOutlet weak var usPrivacyLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .green
-        
-        let privacyString:String?  = CCPAStringBuilder().build()
-        
-        if (privacyString != nil) {
-            print(privacyString!)
-        }
+        let privacyString = CCPAStringBuilder()
+            .set(explicitOptOut: true)
+            .set(optOutSale: true)
+            .set(limitedServiceProviderAgreement: true)
+            .build()
+                
+        print(privacyString)
+        usPrivacyLabel.text = privacyString
     }
 }
