@@ -2,7 +2,7 @@
 //  CCPAStringBuilderTests.swift
 //  CCPAStringBuilderTests
 //
-//  Created by Nikita on 02/01/2020.
+//  Created by Fyber on 02/01/2020.
 //  Copyright © 2020 Fyber. All rights reserved.
 //
 
@@ -17,18 +17,67 @@ class CCPAStringBuilderTests: XCTestCase {
 
     override func tearDown() {}
     
-    func testDefaultString() {
-        let result:String? = stringBuilder.build()
+    func testUnsetParamsString() {
+        let result:String = stringBuilder.build()
         
-        XCTAssertTrue((result != nil), "the default sring is nil")
-        XCTAssertEqual(result!, "1---", "the default string is wrong")
+        XCTAssertEqual(result, "1---", "the string is wrong")
     }
 
-/*
-    func testPerformanceExample() {
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testExplicitOptOutTrue() {
+        let result:String = stringBuilder.set(explicitOptOut: true).build()
+
+        XCTAssertEqual(result, "1Y--", "the string is wrong")
     }
-*/
+    
+    func testExplicitOptOutFalse() {
+        let result:String = stringBuilder.set(explicitOptOut: false).build()
+
+        XCTAssertEqual(result, "1N--", "the string is wrong")
+    }
+    
+    func testOptOutSaleTrue() {
+        let result:String = stringBuilder.set(optOutSale: true).build()
+
+        XCTAssertEqual(result, "1-Y-", "the string is wrong")
+    }
+    
+    
+    func testOptOutSaleFalse() {
+        let result:String = stringBuilder.set(optOutSale: false).build()
+
+        XCTAssertEqual(result, "1-N-", "the string is wrong")
+    }
+    
+    func testLimitedServiceProviderAgreementTrue() {
+        let result:String = stringBuilder.set(limitedServiceProviderAgreement: true).build()
+
+        XCTAssertEqual(result, "1--Y", "the string is wrong")
+    }
+    
+    
+    func testLimitedServiceProviderAgreementFalse() {
+        let result:String = stringBuilder.set(limitedServiceProviderAgreement: false).build()
+
+        XCTAssertEqual(result, "1--N", "the string is wrong")
+    }
+    
+    func testAllSetParamsTrue() {
+        let result = CCPAStringBuilder()
+            .set(explicitOptOut: true)
+            .set(optOutSale: true)
+            .set(limitedServiceProviderAgreement: true)
+            .build()
+        
+        XCTAssertEqual(result, "1YYY", "the string is wrong")
+    }
+    
+    func testAllSetParamsFalse() {
+        let result = CCPAStringBuilder()
+            .set(explicitOptOut: false)
+            .set(optOutSale: false)
+            .set(limitedServiceProviderAgreement: false)
+            .build()
+        
+        XCTAssertEqual(result, "1NNN", "the string is wrong")
+    }
 }

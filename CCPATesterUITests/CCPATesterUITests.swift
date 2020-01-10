@@ -2,7 +2,7 @@
 //  CCPATesterUITests.swift
 //  CCPATesterUITests
 //
-//  Created by Nikita on 02/01/2020.
+//  Created by Fyber on 02/01/2020.
 //  Copyright © 2020 Fyber. All rights reserved.
 //
 
