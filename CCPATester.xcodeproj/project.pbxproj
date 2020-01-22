@@ -141,12 +141,12 @@
 			isa = PBXGroup;
 			children = (
 				11937E1523BDEA4F00E5AAD5 /* AppDelegate.swift */,
+				11937E1E23BDEA5000E5AAD5 /* Assets.xcassets */,
+				11937E2323BDEA5000E5AAD5 /* Info.plist */,
+				11937E2023BDEA5000E5AAD5 /* LaunchScreen.storyboard */,
+				11937E1B23BDEA4F00E5AAD5 /* Main.storyboard */,
 				11937E1723BDEA4F00E5AAD5 /* SceneDelegate.swift */,
 				11937E1923BDEA4F00E5AAD5 /* ViewController.swift */,
-				11937E1B23BDEA4F00E5AAD5 /* Main.storyboard */,
-				11937E1E23BDEA5000E5AAD5 /* Assets.xcassets */,
-				11937E2023BDEA5000E5AAD5 /* LaunchScreen.storyboard */,
-				11937E2323BDEA5000E5AAD5 /* Info.plist */,
 			);
 			path = CCPATester;
 			sourceTree = "<group>";
