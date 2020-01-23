@@ -16,6 +16,8 @@ The Open Source CCPA String Builder, which is compliant with IAB 1.0 final doc.
     spec.platform = :ios
     spec.ios.deployment_target = '9.0'
 
+    spec.swift_version = '5.0'
+
     spec.ios.source_files = 'Source/*.{h,m,swift}', 'CCPAStringBuilder/*.{h,m,swift}'
     spec.static_framework = true
 end
