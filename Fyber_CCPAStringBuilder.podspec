@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
     spec.description  = <<-DESC
 The Open Source CCPA String Builder, which is compliant with IAB 1.0 final doc.
     DESC
-    spec.homepage = 'https://developer.inner-active.com/docs/integrating-ios-sdk'
+    spec.homepage = 'https://github.com/inner-active/CCPAStringBuilder'
     spec.license = { :type => 'MIT', :file => 'LICENSE' }
     spec.social_media_url = 'https://www.facebook.com/fybernv/'
     spec.source = { :git => 'https://github.com/inner-active/CCPAStringBuilder.git', :branch => spec.version, :tag => spec.version }
